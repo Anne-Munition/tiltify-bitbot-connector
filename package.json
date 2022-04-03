@@ -1,0 +1,21 @@
+{
+  "name": "tiltify-bitbot-connector",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "DBKynd <db@dbkynd.com>",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg -t node16-win-x64 --output tiltify-bitbot-connector.exe index.js"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "colors": "^1.4.0",
+    "intercept-stdout": "^0.1.2",
+    "tmi.js": "^1.8.5",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.2"
+  }
+}
