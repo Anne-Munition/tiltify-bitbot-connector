@@ -1,5 +1,7 @@
 .idea/
 node_modules/
+build/
+dist/
 config.js
 rewards.json
 *.exe

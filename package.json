@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "build": "pkg -t node16-win-x64 --output tiltify-bitbot-connector.exe index.js"
+    "build": "pkg -t node16-win-x64 --output ./build/tiltify-bitbot-connector.exe index.js",
+    "package": "grunt"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -16,6 +17,10 @@
     "ws": "^8.5.0"
   },
   "devDependencies": {
-    "pkg": "^5.5.2"
+    "pkg": "^5.5.2",
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-compress": "^2.0.0",
+    "grunt-run": "^0.8.1"
   }
 }
