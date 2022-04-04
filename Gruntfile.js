@@ -47,7 +47,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', [
-      'run:test',
+    'run:test',
     'remove build folder',
     'run:build',
     'copy config file',

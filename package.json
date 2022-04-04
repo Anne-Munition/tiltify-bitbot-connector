@@ -10,7 +10,8 @@
     "start": "node src/index.js",
     "build": "pkg .",
     "package": "grunt",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write \"**/*.{js,md,*rc,json}\" --ignore-path .gitignore"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -26,7 +27,8 @@
     "grunt-contrib-compress": "^2.0.0",
     "grunt-run": "^0.8.1",
     "jest": "^27.5.1",
-    "pkg": "^5.5.2"
+    "pkg": "^5.5.2",
+    "prettier": "^2.6.2"
   },
   "pkg": {
     "scripts": "src/**/*.js",
