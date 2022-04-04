@@ -8,10 +8,10 @@
   "bin": "./src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "build": "pkg .",
-    "package": "grunt",
+    "prettier": "prettier --write \"**/*.{js,md,*rc,json}\" --ignore-path .gitignore",
     "test": "jest",
-    "prettier": "prettier --write \"**/*.{js,md,*rc,json}\" --ignore-path .gitignore"
+    "build": "pkg .",
+    "package": "grunt"
   },
   "dependencies": {
     "axios": "^0.26.1",
