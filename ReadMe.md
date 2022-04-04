@@ -7,7 +7,8 @@
 When you run the application, the list of rewards will be retrieved and saved into a file called `rewards.json` alongside the executable.
 
 This is to make copying the reward IDs into bit-bot easier and to keep track of which reward is which by the reward name.
-They will also be logged to the console window.
+They will also be logged to the Console window.
 
-If you add rewards in the middle of the campaign you will need to restart the application in order to list and see the new IDs.
-Otherwise, you can wait until the new reward ID is posted in the commands Twitch chat when the reward is claimed by a new donation.
+If you add rewards in the middle of the campaign you will need to restart the application in order to see the new IDs in the Console and rewards file.
+
+If you do not restart the application, new IDs WILL post to the twitch chat, but will appear in the Console as 'Unknown'
