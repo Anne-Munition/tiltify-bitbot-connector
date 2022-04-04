@@ -12,12 +12,11 @@ function say(message) {
   twitch.say(process.env.TWITCH_COMMANDS_CHANNEL_NAME, message).catch(() => {});
 }
 
-function connect() {
-  twitch.connect().then(() => {
-    console.log(
-      `Connected to Twitch channel: '${process.env.TWITCH_COMMANDS_CHANNEL_NAME.yellow}' as user: '${process.env.TWITCH_CHAT_USERNAME.yellow}'`,
-    );
-    say('tiltify-bitbot-connector ready');
+async function connect() {
+  await twitch.connect().then(() => {
+    const channelName = process.env.TWITCH_COMMANDS_CHANNEL_NAME.yellow;
+    const username = process.env.TWITCH_CHAT_USERNAME.yellow;
+    console.log(`Connected to Twitch channel: '${channelName}' as user: '${username}'`);
   });
 }
 

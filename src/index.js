@@ -21,7 +21,8 @@ intercept(function (txt) {
     tiltify.storeRewards(rewards);
   }
 
-  twitch.connect();
+  await twitch.connect();
+  twitch.say(`Tiltify Campaign ${process.env.TILTIFY_CAMPAIGN_ID}: '${campaign.data.name}'`);
   tiltify.connect();
 })();
 
