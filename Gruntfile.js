@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'build/',
-            src: ['*'],
+            src: ['tiltify-bitbot-connector.exe', '.env'],
             dest: '/',
           },
         ],
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     'run:test',
     'remove build folder',
     'run:build',
-    'copy config file',
+    'copy .env file',
     'compress',
     'remove build folder',
   ]);
