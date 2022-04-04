@@ -1,5 +1,5 @@
 * Download and extract the ZIP file from the [Releases](https://github.com/Anne-Munition/tiltify-bitbot-connector/releases) page.
-* Enter all values into the ``config.js`` file.
+* Enter all values into the ``.env`` file.
 * Run the ``tiltify-bitbot-connector.exe`` application.
 
 ***
